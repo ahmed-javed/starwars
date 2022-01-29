@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+
+  mysql:
+    build: ./mysql/
+    ports:
+      - 3306:3306
+    container_name: "starwars_mysql"  
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: starwars
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
